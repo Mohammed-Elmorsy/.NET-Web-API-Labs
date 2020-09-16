@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="http://localhost:62416/Scripts/jquery-3.5.1.js"></script>
+    <script>
+        $(function () {
+
+            $.ajax({
+                url: 'http://localhost:6565/api/students',
+                method: 'GET',
+                success: function (data) {
+                    alert(JSON.stringify(data));
+                },
+                error: function () {
+                    alert('error');
+                }
+                })
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
